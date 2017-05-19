@@ -45,5 +45,8 @@
 </head>
 <body class="bg-blue">
     <p class="hello-world">&lt;<span>hello</span><span>-world</span> /&gt;</p>
+
+    echo "<p>".date("F j, Y, g:i a")."</p>";
+
 </body>
 </html>
