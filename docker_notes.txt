@@ -63,6 +63,8 @@ the following docker-compose specifies the following:
 - web's containers share port 80 via load balanced network called webnet ** needs more research
 - define webnet as default (a load balanced overlay network)
 
+** load balancing  
+-"with each request, one of the five replicas is chosen, in a round-robin fashion, to respond"
 version: "3"
 services:
   web:
