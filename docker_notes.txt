@@ -83,3 +83,22 @@ services:
       - webnet
 networks:
   webnet:
+
+
+running the service:
+first,
+docker swarm init
+required to make this node a swarm manager
+then
+docker stack deploy -c docker-compose.yml getstartedlab
+
+docker stack ps getstartedlab
+to see a list of the 5 containers
+
+to scale the app, simply modify the .yml, and run
+docker stack deploy -c docker-compose.yml getstartedlab
+it will do an in-place update; doesnt have to tear down the stack
+
+to take down the app:
+docker stack rm getstartedlab
+
