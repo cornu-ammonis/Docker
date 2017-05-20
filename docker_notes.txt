@@ -1,0 +1,38 @@
+docker notes:
+EXPOSE {port#} makes the specified portavailable to outside world
+
+WORKDIR /app
+ADD . /app
+above two lines will define the working directory as "/app" and 
+copy current directory contents into the /app container directory
+
+
+CMD["python", "app.py"] would run python app.py when container launches
+
+
+docker build -t friendlyhello . 
+creates a docker image and tags it as friendly hello
+-t tag 
+
+docker images 
+lists images in registry
+
+docker run -p 4000:80 
+runs the app and maps the machine port 4000 to the exposed port 80
+-p 
+map ports
+
+-d 
+run in background, in detached mode
+
+docker ps 
+lists containers and ids
+
+docker stop {container ID}
+stops specified process
+
+docker login
+login
+
+The notation for associating a local image with a repository on a 
+registry, is username/repository:tag
