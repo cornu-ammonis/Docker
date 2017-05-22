@@ -70,7 +70,7 @@ services:
   web:
     image: username/repository:tag
     deploy:
-      replicas: 5
+      replicas: 10
       resources:
         limits:
           cpus: "0.1"
