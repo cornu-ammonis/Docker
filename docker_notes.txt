@@ -1,3 +1,8 @@
+** to remove all containers!
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
 docker notes:
 EXPOSE {port#} makes the specified portavailable to outside world
 
